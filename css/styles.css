@@ -116,7 +116,7 @@ body {
   margin-bottom: 40px;
 }
 .main-title {
-  max-width: 202px;
+  width: 202px;
   font-size: 25px;
   margin-bottom: 16px;
 }
@@ -135,6 +135,7 @@ body {
 }
 
 .main-link-list-item {
+  display: block;
   padding: 28px 0 28px 29px;
   border: 1px solid #414141;
   border-radius: 7px;
@@ -153,4 +154,63 @@ body {
 .privacy-policy {
   max-width: 210px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    background-position: top 335px center, center;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 111px;
+    max-width: 574px;
+  }
+
+  .section {
+    padding: 40px 0 31px 0;
+  }
+
+  .page-header {
+    padding: 99px 0 40px 0;
+  }
+
+  .logo {
+    width: 130px;
+    margin-bottom: 34px;
+    position: relative;
+    left: -65px;
+    top: 0;
+  }
+
+  .main-title {
+    width: 354px;
+    font-size: 35px;
+  }
+  .descr-list {
+    line-height: 1.55;
+  }
+
+  .main-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-link-list-item {
+    padding: 23px 0 23px 37px;
+    border: 1px solid #414141;
+    border-radius: 7px;
+  }
+
+  .footer {
+    padding: 31px 0 86px 0;
+    line-height: 2;
+    color: #484a4f;
+    text-align: start;
+  }
+  .privacy-policy {
+    max-width: 335px;
+  }
 }

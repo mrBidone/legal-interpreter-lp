@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "pf_agora_slab_probold";
+  src: url("../fonts/pfagoraslabpro-bold-webfont.eot");
+  src: url("../fonts/pfagoraslabpro-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/pfagoraslabpro-bold-webfont.woff2") format("woff2"),
+    url("../fonts/pfagoraslabpro-bold-webfont.woff") format("woff"),
+    url("../fonts/pfagoraslabpro-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pf_agora_slab_promedium";
+  src: url("../fonts/pfagoraslabpro-medium-webfont.eot");
+  src: url("../fonts/pfagoraslabpro-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/pfagoraslabpro-medium-webfont.woff2") format("woff2"),
+    url("../fonts/pfagoraslabpro-medium-webfont.woff") format("woff"),
+    url("../fonts/pfagoraslabpro-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "pf_agora_slab_probold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(34, 36, 42);
+  background-image: url("../img/desk/bg-lion-desk.webp"),
+    url("../img/desk/bg-desk-big.webp");
+  background-repeat: no-repeat, repeat;
+  background-position: top 371px center, center;
+  background-size: 580px, cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 375px;
+}
+
+.section {
+  padding: 25px 0 25px 0;
+}
+
+.page-header {
+  padding: 115px 0 25px 0;
+}
+
+.logo {
+  width: 92px;
+  margin-bottom: 40px;
+}
+.main-title {
+  max-width: 202px;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+.descr-list {
+  font-family: "pf_agora_slab_promedium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-link-list-item {
+  padding: 28px 0 28px 29px;
+  border: 1px solid #414141;
+  border-radius: 7px;
+}
+
+.footer {
+  padding: 40px 0 70px 0;
+
+  text-align: center;
+  font-family: "pf_agora_slab_promedium", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #484a4f;
+}
+.privacy-policy {
+  max-width: 210px;
+  margin: 0 auto;
+}

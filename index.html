@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BRITVA - Barbershop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>legal-interpreter</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
@@ -17,32 +11,57 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header class="page-header">
-      <svg class="page-logo" width="118" height="48">
-        <use class="page-logo-icon" href="./img/svg/sprite.svg#icon-logo"></use>
-      </svg>
-      <nav class="page-nav">
-        <ul class="page-nav-list">
-          <li class="nav-list-item"><a class="nav-link" href="">бронь</a></li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">instagram</a>
+      <div class="container">
+        <img
+          class="logo"
+          src="./img/desk/logo-desk.webp"
+          alt="Abdurachmanov's logo"
+          width="92"
+        />
+        <h1 class="main-title">Ing. Daler Kamilovič Abdurachmanov</h1>
+        <ul class="descr-list">
+          <li class="descr-list-item">
+            <p>Soudní tlumočník</p>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">telegram</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">яндекс.карты</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="">Google Maps</a>
-          </li>
+          <li class="descr-list-item"><p>Чешский судебный переводчик</p></li>
         </ul>
-      </nav>
-      <p class="privacy-policy">2024, Britva Barbershop</p>
+      </div>
     </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="main-link-list">
+            <li class="main-link-list-item"><a href="">Telegram</a></li>
+            <li class="main-link-list-item"><a href="">Facebook</a></li>
+            <li class="main-link-list-item"><a href="">LinkedIn</a></li>
+            <li class="main-link-list-item">
+              <a href="">Komora soudních tlumočníků</a>
+            </li>
+            <li class="main-link-list-item"><a href="">Instagram</a></li>
+            <li class="main-link-list-item">
+              <a href="">StudyIn.University</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="privacy-policy">
+          <span></span>, Далер Абдурахманов. Все права защищены.
+        </p>
+      </div>
+    </footer>
+    <script defer>
+      window.addEventListener("load", function () {
+        const currentYear = new Date().getFullYear();
+        document.querySelector(".privacy-policy span").textContent =
+          currentYear;
+      });
+    </script>
   </body>
 </html>

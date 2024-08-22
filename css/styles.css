@@ -202,6 +202,12 @@ body {
     padding: 23px 0 23px 37px;
     border: 1px solid #414141;
     border-radius: 7px;
+    transition: background-color 250ms linear;
+  }
+
+  .main-link-list-item:hover,
+  .main-link-list-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .footer {

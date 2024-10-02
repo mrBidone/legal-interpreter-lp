@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap");
+
 @font-face {
   font-family: "pf_agora_slab_probold";
   src: url("../fonts/pfagoraslabpro-bold-webfont.eot");
@@ -93,8 +95,9 @@ body {
   background-image: url("../img/desk/bg-lion-desk.webp"),
     url("../img/desk/bg-desk-big.webp");
   background-repeat: no-repeat, repeat;
-  background-position: top 371px center, center;
+  background-position: top 92px center, center;
   background-size: 580px, cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -108,7 +111,7 @@ body {
 }
 
 .page-header {
-  padding: 115px 0 25px 0;
+  padding: 105px 0 25px 0;
 }
 
 .logo {
@@ -141,9 +144,62 @@ body {
   border-radius: 7px;
 }
 
+.language-toogle-section {
+  padding: 35px 0 45px 0;
+}
+
+.lang-btn-list {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn-list::before {
+  display: block;
+  content: " ";
+  width: 13px;
+  height: 13px;
+  background-image: url(/img/svg/lang.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 7px;
+}
+
+.language-btn-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.language-btn-list-item:not(:last-child)::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.21);
+  margin-left: 9px;
+}
+
+.language-btn {
+  border: none;
+  padding: 0;
+  line-height: normal;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.21);
+  cursor: pointer;
+}
+
+.isActiveLangBtn {
+  color: #fff;
+}
+
 .footer {
   padding: 40px 0 70px 0;
-
   text-align: center;
   font-family: "pf_agora_slab_promedium", sans-serif;
   font-weight: 500;
@@ -214,7 +270,7 @@ body {
     padding: 31px 0 86px 0;
     line-height: 2;
     color: #484a4f;
-    text-align: start;
+    text-align: center;
   }
   .privacy-policy {
     max-width: 335px;

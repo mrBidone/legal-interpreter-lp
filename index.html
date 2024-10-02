@@ -16,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/change-language.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -29,9 +30,8 @@
         <h1 class="main-title">Ing. Daler Kamilovič Abdurachmanov</h1>
         <ul class="descr-list">
           <li class="descr-list-item">
-            <p>Soudní tlumočník</p>
+            <p id="translatorTitle"></p>
           </li>
-          <li class="descr-list-item"><p>Чешский судебный переводчик</p></li>
         </ul>
       </div>
     </header>
@@ -70,10 +70,10 @@
             </li>
             <li>
               <a
+                id="chamberButton"
                 class="main-link-list-item"
                 href="https://www.kstcr.cz/en/members/daler-kamilovic-abdurachmanov/"
-                >Komora soudních tlumočníků</a
-              >
+              ></a>
             </li>
             <li>
               <a
@@ -85,12 +85,37 @@
           </ul>
         </div>
       </section>
+      <section class="language-toogle-section">
+        <h2 class="visually-hidden">Language toogle</h2>
+        <div class="container">
+          <ul class="lang-btn-list">
+            <li class="language-btn-list-item">
+              <button class="language-btn" data-lang="en" type="button">
+                English
+              </button>
+            </li>
+            <li class="language-btn-list-item">
+              <button class="language-btn" data-lang="uz" type="button">
+                O'zbekcha
+              </button>
+            </li>
+            <li class="language-btn-list-item">
+              <button class="language-btn" data-lang="ru" type="button">
+                Русский
+              </button>
+            </li>
+            <li class="language-btn-list-item">
+              <button class="language-btn" data-lang="cz" type="button">
+                Čeština
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="privacy-policy">
-          <span></span>, Далер Абдурахманов. Все права защищены.
-        </p>
+        <p class="privacy-policy"><span></span>, <span id="rights"></span></p>
       </div>
     </footer>
     <script defer>
@@ -101,31 +126,62 @@
       });
     </script>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-   ym(96734051, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/96734051" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFXC744Y6G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      ym(96734051, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/96734051"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-  gtag('config', 'G-LFXC744Y6G');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LFXC744Y6G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LFXC744Y6G");
+    </script>
   </body>
 </html>

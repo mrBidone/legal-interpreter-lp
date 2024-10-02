@@ -1,0 +1,22 @@
+{
+    "ru": {
+        "translatorTitle": "Чешский судебный переводчик",
+        "chamberButton": "Палата судебных переводчиков",
+        "rights": "Все права защищены."
+    },
+    "cz": {
+        "translatorTitle": "Soudní tlumočník",
+        "chamberButton": "Komora soudních tlumočníků",
+        "rights": "Všechna práva vyhrazena."
+    },
+    "uz": {
+        "translatorTitle": "Chexiya sud tarjimoni",
+        "chamberButton": "Sud tarjimonlar palatasi",
+        "rights": "Barcha huquqlar himoyalangan."
+    },
+    "en": {
+        "translatorTitle": "Czech court interpreter",
+        "chamberButton": "Chamber of Court Interpreters",
+        "rights": "All rights reserved."
+    }
+}

@@ -147,7 +147,7 @@ body {
 .main-link-list-item {
   display: block;
   max-width: 295px;
-  padding: 28px 0 28px 12px;
+  padding: 28px 0 28px 29px;
   border: 1px solid #414141;
   border-radius: 7px;
 }

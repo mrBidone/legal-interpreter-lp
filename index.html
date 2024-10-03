@@ -16,10 +16,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preload" href="../img/desk/bg-lion-desk.webp" as="image">
+<link rel="preload" href="../img/desk/bg-desk-big.webp" as="image">
     <script type="module" src="./js/change-language.js"></script>
   </head>
   <body>
-    <header class="page-header">
+    <div class="bg-thumb"></div>
+    <div class="content">
+ <header class="page-header"></header>
       <div class="container">
         <img
           class="logo"
@@ -124,7 +128,9 @@
         document.querySelector(".privacy-policy span").textContent =
           currentYear;
       });
+
     </script>
+
     <!-- Yandex.Metrika counter -->
     <!-- <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -183,5 +189,7 @@
 
       gtag("config", "G-LFXC744Y6G");
     </script> -->
+    </div>
+   
   </body>
 </html>

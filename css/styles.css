@@ -94,25 +94,45 @@ body {
   font-size: 16px;
   color: #ffffff;
   background-color: rgb(34, 36, 42);
+  /* background-image: url("../img/desk/bg-desk-big.webp");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover; */
+  z-index: 1;
+}
+
+.bg-thumb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: url("../img/desk/bg-lion-desk.webp"),
     url("../img/desk/bg-desk-big.webp");
   background-repeat: no-repeat, repeat;
   background-position: top 92px center, center;
   background-size: 580px, cover;
-  background-attachment: fixed;
+  z-index: -1; /* Чтобы фон находился позади контента */
 }
 
+.content {
+  position: relative;
+  z-index: 2; /* Контент на переднем плане */
+}
+/* 
+.bg-thumb {
+  position: fixed;
+  background-color: rgb(34, 36, 42);
+  background-image: url("../img/desk/bg-lion-desk.webp"),
+    url("../img/desk/bg-desk-big.webp");
+  background-repeat: no-repeat, repeat;
+  background-position: top 92px center, center;
+  background-size: 580px, cover;
+} */
 .container {
   margin: 0 auto;
   padding: 0 40px;
   max-width: 375px;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 374px) {
-  .container {
-    margin: 0 auto;
-    padding: 0 20px;
-  }
 }
 
 .section {
@@ -218,13 +238,17 @@ body {
   color: #484a4f;
 }
 .privacy-policy {
-  max-width: 210px;
+  max-width: 248px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   body {
     font-size: 18px;
+  }
+
+  .bg-thumb {
+    position: absolute;
     background-position: top 335px center, center;
   }
 

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @font-face {
   font-family: "pf_agora_slab_probold";
   src: url("../fonts/pfagoraslabpro-bold-webfont.eot");
@@ -87,8 +89,8 @@ img {
 }
 
 body {
-  font-family: "pf_agora_slab_probold", sans-serif;
-  font-weight: 600;
+  font-family: "Arvo", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   color: #ffffff;
   background-color: rgb(34, 36, 42);
@@ -147,7 +149,7 @@ body {
 .main-link-list-item {
   display: block;
   max-width: 295px;
-  padding: 28px 0 28px 29px;
+  padding: 28px 0 28px 23px;
   border: 1px solid #414141;
   border-radius: 7px;
 }

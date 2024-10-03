@@ -88,7 +88,7 @@ img {
 
 body {
   font-family: "pf_agora_slab_probold", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   color: #ffffff;
   background-color: rgb(34, 36, 42);
@@ -104,6 +104,13 @@ body {
   margin: 0 auto;
   padding: 0 40px;
   max-width: 375px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 374px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 .section {
@@ -139,7 +146,8 @@ body {
 
 .main-link-list-item {
   display: block;
-  padding: 28px 0 28px 29px;
+  max-width: 295px;
+  padding: 28px 0 28px 12px;
   border: 1px solid #414141;
   border-radius: 7px;
 }

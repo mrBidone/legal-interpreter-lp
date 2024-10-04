@@ -94,25 +94,27 @@ body {
   font-size: 16px;
   color: #ffffff;
   background-color: rgb(34, 36, 42);
-  /* background-image: url("../img/desk/bg-desk-big.webp");
+  background-image: url("../img/desk/bg-desk-big.webp");
   background-repeat: repeat;
   background-position: center;
-  background-size: cover; */
-  z-index: 1;
+  background-size: cover;
+  z-index: -1;
 }
 
-.bg-thumb {
+body::before {
+  display: block;
+  content: " ";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
-  background-image: url("../img/desk/bg-lion-desk.webp"),
-    url("../img/desk/bg-desk-big.webp");
-  background-repeat: no-repeat, repeat;
-  background-position: top 92px center, center;
-  background-size: 580px, cover;
-  z-index: -1; /* Чтобы фон находился позади контента */
+  height: 100%;
+  background-image: url("../img/desk/bg-lion-desk.webp");
+  background-repeat: no-repeat;
+  background-position: top 92px center;
+  background-size: 580px;
+  /* background-size: cover; */
+  z-index: -10;
 }
 
 .content {
@@ -247,9 +249,20 @@ body {
     font-size: 18px;
   }
 
-  .bg-thumb {
-    position: absolute;
-    background-position: top 335px center, center;
+  body::before {
+    display: block;
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/desk/bg-lion-desk.webp");
+    background-repeat: no-repeat;
+    background-position: top 418px center;
+    background-size: 574px 654px;
+    /* background-size: cover; */
+    z-index: -10;
   }
 
   .container {
@@ -275,7 +288,7 @@ body {
   }
 
   .main-title {
-    width: 354px;
+    width: 374px;
     font-size: 35px;
   }
   .descr-list {
@@ -289,6 +302,7 @@ body {
   }
 
   .main-link-list-item {
+    max-width: 352px;
     padding: 23px 0 23px 37px;
     border: 1px solid #414141;
     border-radius: 7px;
@@ -298,6 +312,14 @@ body {
   .main-link-list-item:hover,
   .main-link-list-item:focus {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .language-btn {
+    transition: color 250ms linear;
+  }
+
+  .language-btn:hover {
+    color: rgba(255, 255, 255, 0.4);
   }
 
   .footer {

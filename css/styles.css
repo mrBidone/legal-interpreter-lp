@@ -111,7 +111,8 @@ body::before {
   height: 100%;
   background-image: url("../img/svg/lion-bg.svg");
   background-repeat: no-repeat;
-  background-position: top 92px center;
+  /* background-position: top 92px center; */
+  background-position: center center;
   background-size: 574px 654px;
   z-index: -10;
 }
@@ -132,7 +133,7 @@ body::before {
 }
 
 .page-header {
-  padding: 105px 0 25px 0;
+  padding: 75px 0 25px 0;
 }
 
 .logo {
@@ -270,6 +271,7 @@ body::before {
   .main-title {
     width: 374px;
     font-size: 35px;
+    line-height: 43px;
   }
   .descr-list {
     line-height: 1.55;

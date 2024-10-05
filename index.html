@@ -21,116 +21,115 @@
   <body>
     <div class="bg-thumb"></div>
     <div class="content">
- <header class="page-header"></header>
-      <div class="container">
-        <img
-          class="logo"
-          src="./img/desk/logo-desk.webp"
-          alt="Abdurachmanov's logo"
-          width="92"
-        />
-        <h1 class="main-title">Ing. Daler Kamilovič Abdurachmanov</h1>
-        <ul class="descr-list">
-          <li class="descr-list-item">
-            <p id="translatorTitle"></p>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="section">
-        <h2 class="visually-hidden">SOCIAL-LINK-LIST</h2>
+      <header class="page-header">
         <div class="container">
-          <ul class="main-link-list">
-            <li>
-              <a
-                class="main-link-list-item"
-                href="https://www.t.me/AbdurachmanovDaler/"
-                >Telegram</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-link-list-item"
-                href="https://www.facebook.com/profile.php?id=100078085585432/"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-link-list-item"
-                href="https://www.linkedin.com/in/daler-kamilovic/"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-link-list-item"
-                href="https://www.instagram.com/daler.kamilovic/"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                id="chamberButton"
-                class="main-link-list-item"
-                href="https://www.kstcr.cz/en/members/daler-kamilovic-abdurachmanov/"
-              ></a>
-            </li>
-            <li>
-              <a
-                class="main-link-list-item"
-                href="https://www.studyin.university/siu/"
-                >StudyIn.University</a
-              >
+          <img
+            class="logo"
+            src="./img/desk/logo-desk.webp"
+            alt="Abdurachmanov's logo"
+            width="92"
+          />
+          <h1 class="main-title">Ing. Daler Kamilovič Abdurachmanov</h1>
+          <ul class="descr-list">
+            <li class="descr-list-item">
+              <p id="translatorTitle"></p>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="language-toogle-section">
-        <h2 class="visually-hidden">Language toogle</h2>
+      </header>
+      <main>
+        <section class="section">
+          <h2 class="visually-hidden">SOCIAL-LINK-LIST</h2>
+          <div class="container">
+            <ul class="main-link-list">
+              <li>
+                <a
+                  class="main-link-list-item"
+                  href="https://www.t.me/AbdurachmanovDaler/"
+                  >Telegram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-link-list-item"
+                  href="https://www.facebook.com/profile.php?id=100078085585432/"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-link-list-item"
+                  href="https://www.linkedin.com/in/daler-kamilovic/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-link-list-item"
+                  href="https://www.instagram.com/daler.kamilovic/"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  id="chamberButton"
+                  class="main-link-list-item"
+                  href="https://www.kstcr.cz/en/members/daler-kamilovic-abdurachmanov/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="main-link-list-item"
+                  href="https://www.studyin.university/siu/"
+                  >StudyIn.University</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="language-toogle-section">
+          <h2 class="visually-hidden">Language toogle</h2>
+          <div class="container">
+            <ul class="lang-btn-list">
+              <li class="language-btn-list-item">
+                <button class="language-btn" data-lang="en" type="button">
+                  English
+                </button>
+              </li>
+              <li class="language-btn-list-item">
+                <button class="language-btn" data-lang="uz" type="button">
+                  O'zbekcha
+                </button>
+              </li>
+              <li class="language-btn-list-item">
+                <button class="language-btn" data-lang="ru" type="button">
+                  Русский
+                </button>
+              </li>
+              <li class="language-btn-list-item">
+                <button class="language-btn" data-lang="cz" type="button">
+                  Čeština
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <ul class="lang-btn-list">
-            <li class="language-btn-list-item">
-              <button class="language-btn" data-lang="en" type="button">
-                English
-              </button>
-            </li>
-            <li class="language-btn-list-item">
-              <button class="language-btn" data-lang="uz" type="button">
-                O'zbekcha
-              </button>
-            </li>
-            <li class="language-btn-list-item">
-              <button class="language-btn" data-lang="ru" type="button">
-                Русский
-              </button>
-            </li>
-            <li class="language-btn-list-item">
-              <button class="language-btn" data-lang="cz" type="button">
-                Čeština
-              </button>
-            </li>
-          </ul>
+          <p class="privacy-policy"><span></span>, <span id="rights"></span></p>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <p class="privacy-policy"><span></span>, <span id="rights"></span></p>
-      </div>
-    </footer>
-    <script defer>
-      window.addEventListener("load", function () {
-        const currentYear = new Date().getFullYear();
-        document.querySelector(".privacy-policy span").textContent =
-          currentYear;
-      });
+      </footer>
+      <script defer>
+        window.addEventListener("load", function () {
+          const currentYear = new Date().getFullYear();
+          document.querySelector(".privacy-policy span").textContent =
+            currentYear;
+        });
+      </script>
 
-    </script>
-
-    <!-- Yandex.Metrika counter -->
-    <!-- <script type="text/javascript">
+      <!-- Yandex.Metrika counter -->
+      <!-- <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] =
           m[i] ||
@@ -171,10 +170,10 @@
           alt=""
         /></div
     ></noscript> -->
-    <!-- /Yandex.Metrika counter -->
+      <!-- /Yandex.Metrika counter -->
 
-    <!-- Google tag (gtag.js) -->
-    <!-- <script
+      <!-- Google tag (gtag.js) -->
+      <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-LFXC744Y6G"
     ></script>
@@ -188,6 +187,5 @@
       gtag("config", "G-LFXC744Y6G");
     </script> -->
     </div>
-   
   </body>
 </html>
